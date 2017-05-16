@@ -1,0 +1,76 @@
+Add items to create initial list.
+The list contains 4 entries, as follows:
+16 is entry 1
+4 is entry 2
+33 is entry 3
+27 is entry 4
+
+Remove item from a list.
+The list contains 3 entries, as follows:
+16 is entry 1
+33 is entry 2
+27 is entry 3
+
+Adding an entry to a specific location.
+The list contains 4 entries, as follows:
+16 is entry 1
+22 is entry 2
+33 is entry 3
+27 is entry 4
+
+Replacing an entry at a specific position in the list.
+The list contains 4 entries, as follows:
+16 is entry 1
+22 is entry 2
+4 is entry 3
+27 is entry 4
+
+Retrieving an entry at a specific position in the list.
+The 4th position value in this list: 27
+
+Retrieving an entry by looking for its name.
+Does this list contain the number 4: true
+
+Testing getIndex to return index of first entry of an item.
+The list contains 5 entries, as follows:
+16 is entry 1
+22 is entry 2
+4 is entry 3
+4 is entry 4
+27 is entry 5
+
+Number 4 has an index of: 3
+
+Testing removeEvery method to remove every instance of 4 in list
+List before removal of #4.
+The list contains 6 entries, as follows:
+16 is entry 1
+4 is entry 2
+22 is entry 3
+4 is entry 4
+4 is entry 5
+27 is entry 6
+
+List after number four was removed 3 times.
+The list contains 3 entries, as follows:
+16 is entry 1
+22 is entry 2
+27 is entry 3
+
+Testing lastItemFound method to find the last of an item in a list.
+The list contains 5 entries, as follows:
+16 is entry 1
+4 is entry 2
+22 is entry 3
+4 is entry 4
+27 is entry 5
+
+The last item of number four has an index of: 4
+
+Testing equals method which comparies lists to determine equality.
+runnerList and runnerList2 are equal: true
+runnerList3 is created as a new AList object.
+runnerList2 and runnerList3 are equal: false
+
+Clearing a list.
+The list contains no items.

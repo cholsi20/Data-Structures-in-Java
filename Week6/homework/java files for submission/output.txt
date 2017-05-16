@@ -1,0 +1,20 @@
+Testing LinkedStack methods.
+Top Node is: .	Popped: .
+New Top Node is: test
+
+Testing method remove( int n )
+Testing to remove 3 items.
+Number of items removed: 3
+Testing to remove 3 items again.
+Number of items removed: 2
+Testing to remove 3 items from empty stack.
+Number of items removed: 0
+
+Initial ArrayStack2 method tests.
+arrayStack is currently empty: true
+arrayStack's top element in the stack is: null
+Testing push method.
+arrayStack's new top element in the stack is: .
+Testing pop method.
+arrayStack's new top element in the stack  after popping the top element is: test
+arrayStack's top element in an empty  stack is: null

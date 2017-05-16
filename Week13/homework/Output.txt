@@ -1,0 +1,9 @@
+******
+OUTPUT
+******
+
+Binary Tree 'binaryTree' is a Binary Tree: false
+
+Exception in thread "main" java.lang.StackOverflowError
+	at binarytrees.BinarySearchTree.isBalanced(BinarySearchTree.java:175)
+	

@@ -1,0 +1,12 @@
+******
+OUTPUT
+******
+
+The output of the first array counts the number of occurances for each number, and the second the sorted array.
+[1, 4, 1, 2, 1, 0, 1, 2, 2]
+[1, 2, 2, 2, 2, 3, 4, 4, 5, 7, 8, 8, 9, 9]
+
+The missing number in A1 is: 2
+The missing number in A2 is: 3
+
+The kth smallest element, and median, of testArray is: 7

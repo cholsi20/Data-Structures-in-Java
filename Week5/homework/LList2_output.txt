@@ -1,0 +1,18 @@
+******
+OUTPUT
+******
+
+Testing getIndex method.
+The index of 'This' is: 4
+The index of 'Who' is: -1
+
+Testing removeEvery method.
+The number of times "." was removed: 2
+The number of times "Who" was removed: 0
+Testing equals method.
+The List exactCopy is an exact copy of myList: true
+The List notACopy is an exact copy of myList: false
+
+Testing contains2 method.
+myList contains "This": true
+myList contains "Who": false

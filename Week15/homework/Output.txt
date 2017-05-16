@@ -1,0 +1,15 @@
+Mom has been added to the dictionary as: Sylvia
+Dad has been added to the dictionary as: Shawn
+Sister has been added to the dictionary as: Christie
+Worst Enemy has been added to the dictionary as: N/A
+
+The value removed was: N/A
+The value of sister is: Christie
+
+The dictionary contains a reference to dad: true
+
+dictionary is empty: false
+dictionary2 is empty: true
+
+The number of entries in the dictionary is: 3
+

@@ -1,0 +1,16 @@
+******
+OUTPUT
+******
+
+Testing method min to return minumum value.
+The minimum value in int[] a is: 2
+
+Testing computePay method.
+Pay received on day 39: 778 cents
+
+Testing computeSavings method.
+The total pay you would recieve in cents after 39 days is: 10585 cents
+
+Testing countSubstring method.
+The total number of times the word Java appears in string s1 is: 5
+

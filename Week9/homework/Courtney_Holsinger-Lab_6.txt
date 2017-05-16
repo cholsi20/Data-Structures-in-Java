@@ -1,0 +1,88 @@
++----+
+| P1 |
++----+
+
+a) O(n) - only if assumption is that you shake person’s hands for same amount of time 
+	O(n^2) - if time for each handshake increases exponentially
+
+b) O( (n(n-1))/2 ) - as you move through the room, you need to shake hands with each person, minus yourself, assuming people are not leaving or coming during the amount of time it takes you to reach each person.   
+
+c) O(n) - to account for n number of stairs in the staircase, given you must increment by one each time.  This is true even if you skip a step, and increment by two each time.  
+
+d) O(n^2) - You scan through each row and column of button for n number of floors until you achieve your desired floor.  Because you are needing to move through rows and columns I think this is n^2.  It would be like treating the rows and columns as a multi-dimensional array, which would require nested for loops, for instance, to traverse.  
+
+e) O(1) - if the floor you need to go to the the very next floor up or down
+	O(n) - if the floor you need to go to is n level either up or down and you do not stop at other floors or stop at other floors for the same amount of time to allow more passengers to enter.   
+	O( n^2 ) - if you stop at each floor or other floors to aquire more passengers, but for different amounts of time.
+	O( log(n) ) - if the elevator does not follow a linear pattern, but rather prioritizes which floor was entered first, in which case you may go up and down several floors before reching your floor and you stop at each floor for the same amount of time. (the elevator in the office at my previous job operated in this way )
+
+f) O(n) - because you perform the exact same operation each time, which is to read through each page one at a time.  So, you perform the action 2n times, but the operation itself if O(n).
+
+g) O(n) - if you iterate one by one through each successive element one after the other.  
+	O( log(n) ) - if you are performing a search, such as a binary search, in order to print the numbers in a specified order.  
+
+h) O(n) - given that you would need to traverse the linked nodes to print each one in successive order.  
+
+i) O(1) - to display just the nth integer because you can simply print array[ index ], disregarding the fact that print is a function with some time requirement to execute.   
+
+j) O(n!) - given that you're computing the sum in terms of n number of even integers.  Sum is increasing by a factor of n number of operations assuming you're iterating through the array in a linear fashion.  
+
+
++----+
+| P2 |
++----+
+
+n < (n^2 / log(n)) < n^2log(n) < (1.5)^n < 3^n < n!
+
+
++----+
+| P3 |
++----+
+
+for (int pass = 1; pass <= n; pass++) {					<---executes n number of times | O(n)
+	for (int index = 0; index < n; index++) {			<---executes n-1 number of times | O(n)
+		for (int count = 1; count < 10; count++) { 		<---executes 9 times. | O(1)
+		// constant time operations 					<--executes 9 times. | O(1)
+		} // end for
+	} // end for
+} // end
+
+At its worst, this operation runs at a O(n^2).  Given that the operations need to occur as 9*n*n-1 you get n^2 as the time requirement.  
+
++----+
+| P4 |
++----+
+
+public class BigO {
+	
+	public static void main( String[] args ) {
+		
+		int[] i = {1,2,5,6,9,100,20};
+		int[] j = {1,2,5,6,9,100};
+		
+		System.out.printf( "Integer array i is sorted: %s\n\n", isSorted( i ) );
+		System.out.printf( "Integer array i is sorted: %s\n\n", isSorted( j ) );
+		
+	}
+	
+	//begin isSorted method 
+	static boolean isSorted( int[] a ) {
+		
+		for ( int count = 1; count < a.length; count++ ){ //occurs n times
+			
+				if ( a[count-1] > a[count] ) { //occurs n times
+					
+					return false; //occurs once
+					
+				} //end if the current number is greater the next number
+			
+		} //end for loop 
+		
+		return true; //occurs once 
+		
+	} //end method isSorted
+	
+
+} //end class BigO
+
+In this instance, the count for this would be 1+n-1+1+n-1+1+1 which comes out to 2n+2 or O(n).
